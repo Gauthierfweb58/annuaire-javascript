@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>annuaire</title>
+
+</head>
+<body>
+	<div class="clickEvent">
+        <button id="btn">Appuyez ici pour voir la liste des clients</button>
+        <br>
+		<h1>Voici la liste des clients</h1>
+		<select id="personne" style='font-family:verdana; font-size:10; width:300px;' size='6'></select>
+	</div>
+	<!--<div class="clickEvent">
+        <button id="btn">Appuyez ici</button>
+        <br>
+        <img src="./20201222164711-removebg-preview.png" id="img" alt="">
+    </div>-->
+		<form >
+			<div id="ajouter">
+				<h2>Ajouter un client</h2> 
+				<label for="nom">Entrez votre nom: </label>
+				<input type="text" name="nom" id="nom" required>
+				<label for="prenom">Entrez votre prénom: </label>
+				<input type="text" name="prenom" id="prenom" required>
+				<label for="tel">Entrez votre numéro de téléphone: </label>
+				<input type="tel" name="tel" id="tel" maxlength="10"required>
+				<input type="button" value="Ajouter client" id="button_ajout" onclick="ajouterClient()">
+			</div>
+		</form>
+	<div id="suppression">
+		<label for="input" id="client_suppr">Supprimer un client</label>
+	<input type="button" value="Supprimer client" id="button_suppr"onclick="supprimerClient()">
+	<!--<a href="tel:+0648146957"> Appeler la société xxx </a>-->
+	</div>
+	<div class="mouseEvent">
+        <div>horizontal : <span class="horizontal">0</span> </div>
+        <div>vertical : <span class="vertical">0</span> </div>
+    </div>
+<div class="inputEvent">
+<label for="input">Indiquez le niveau et déplacez le bouton du dessous ?</label>
+<br>
+<input type="text" id="input">
+<div id="result"></div>
+</div>
+	<script src="script.js"></script>
+</body>
+</html>

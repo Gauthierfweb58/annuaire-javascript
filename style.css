@@ -1,0 +1,65 @@
+
+*{
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgb(244, 242, 224);
+}
+
+#personne {
+    visibility: hidden;
+}
+.show {
+    visibility: visible !important;
+}
+
+button {
+    background-color: rgb(184, 164, 204);
+}
+
+input{
+    background-color: aquamarine;
+    position: relative;
+    height: 40px; 
+    margin-top: 15px;
+}
+#button_ajout{
+    margin-left: 20px;
+}
+#button_suppr{
+    margin-top: 20px;
+    background-color: darkkhaki;  
+}
+
+#suppression{
+    background-color: rgb(233, 201, 160);
+}
+#client_suppr{
+    background-color: rgb(198, 198, 216);
+}
+.mouseEvent {
+    border: 6px solid rebeccapurple;
+    width: 200px;
+    position: absolute;
+    left: 20%;
+    transform: translateX(-50%);
+    padding: 10px;
+    margin-top: 250px;
+    background-color: darkturquoise;
+
+}
+#ajouter{
+    display:flex;
+    flex-direction:row;
+    margin-top: 20px;
+    justify-content: center;
+}
+.inputEvent{
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+label{
+    margin:2px;
+    padding: 20px;
+}
